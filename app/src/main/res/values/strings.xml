@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mi_Base_de_Datos</string>
+    <string name="crear_contacto">Nuevo Contacto</string>
+    <string name="buscar">Buscar</string>
 </resources>
