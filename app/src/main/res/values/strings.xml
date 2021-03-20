@@ -8,4 +8,5 @@
     <string name="ingresa_fecha_de_nacimiento">Fecha de Nacimiento...</string>
     <string name="agregar">Agregar Contacto</string>
     <string name="cancelar">Cancelar</string>
+    <string name="actualizar">Actualizar Contacto</string>
 </resources>
