@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme">
         <provider
             android:name="com.example.mi_base_de_datos.MiContentProviderDB"
-            android:authorities="com.brian.mibasedatosp77b.provider"
+            android:authorities="com.example.mi_base_de_datos.provider"
             android:enabled="true"
             android:exported="true"
             android:forceUriPermissions="true"
