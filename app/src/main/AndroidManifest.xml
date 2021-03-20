@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mi_base_de_datos">
 
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+
+    <permission android:name="my.permissionRead"></permission>
+    <permission android:name="my.permissionWrite"></permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <provider
+            android:name="com.example.mi_base_de_datos.MiContentProviderDB"
+            android:authorities="com.brian.mibasedatosp77b.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:forceUriPermissions="true"
+            android:grantUriPermissions="true"
+            android:readPermission="my.permissionRead"
+            android:writePermission="my.permissionWrite"></provider>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.mi_base_de_datos.AgregarContactoActivity"></activity>
+        <activity android:name="com.example.mi_base_de_datos.EditarContactoActivity"></activity>
     </application>
 
 </manifest>
